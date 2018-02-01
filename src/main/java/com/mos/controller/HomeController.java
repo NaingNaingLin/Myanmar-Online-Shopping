@@ -20,13 +20,10 @@ public class HomeController {
 		
 		return "/views/about";
 	}
-<<<<<<< HEAD
 	
 	public void test(){
 		
 	}
 
 
-=======
->>>>>>> parent of 9d0158f... Test Push
 }
