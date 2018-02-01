@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title> Admin Home</title>
+		<div th:replace="fragment/header :: css"></div>
+	</head>
+	<body>
+		<div th:replace="fragment/header :: header"></div>
+		
+		<div class="jumbotron">
+			<h1>Welcome to Admin Home</h1>
+		</div>
+		
+		<!-- <div class="container">
+			
+			
+			<div class="panel-group" style="margin-top:40px">
+			<div class="panel panel-primary">
+				<div class="row">
+					<div class="panel-heading col-md-8">
+						<span th:utext="${userName}"></span>
+					</div>
+					<div class="col-md-3">
+						<form th:action="@{/logout}" method="get">
+							<button class="btn btn-md btn-danger btn-block" name="registration"	type="Submit">Logout</button>
+						</form>
+					</div>				
+				</div>
+				
+				<div class="panel-body">
+					
+				</div>
+				<p class="admin-message-text text-center" th:utext="${adminMessage}"></p>
+			</div>
+		</div>
+		</div> -->
+		
+		
+		
+		
+		
+		<div th:replace="fragment/footer :: footer"></div>
+		<div th:replace="fragment/footer :: js"></div>
+	</body>
+</html>

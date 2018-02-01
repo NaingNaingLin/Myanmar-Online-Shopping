@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	  
+	<head>
+		<div th:fragment="css">
+			<meta charset="UTF-8"></meta>
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+			
+			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+			<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}"/>
+			<link rel="stylesheet" th:href="@{/css/custom/main.css}"/>
+			
+		</div>
+		
+	</head>
+	
+	<body>
+		<section>
+			<div th:fragment="header">
+				<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+					<a class="navbar-brand" th:href="@{/}">
+						Myanmar Online Shopping
+					</a>
+					
+					
+					<div class="container">
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+								aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<div class="collapse navbar-collapse" id="navbarResponsive">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#" th:href="@{/about}">About</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link" href="#" th:href="@{/Category}">Category</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link" href="#" th:href="@{/Company}">Company</a>
+								</li>
+								
+							</ul>
+							
+							<ul class="navbar-nav navbar-right">
+								<li th:if="${#authorization.expression('!isAuthenticated()')}">
+									<a href="#" th:href="@{/signin}">
+										<i class="fa fa-sign-in" aria-hidden="true">&nbsp; Sign In</i>
+									</a>
+									
+								</li>
+								<li th:if="${#authorization.expression('isAuthenticated()')}">
+									<span sec:authorize="isAuthenticated()">
+										<font style="color: white;">|</font> <span style="color: red;" sec:authentication="name"></span> <font style="color: white;">|</font> 
+										<font style="color: white;">|</font>  <span style="color: red;" sec:authentication="principal.authorities"></span> <font style="color: white;">|</font> 
+										<a href="#" th:href="@{/logout}">
+											<i class="fa fa-sign-out" aria-hidden="true">&nbsp; Sign Out</i>
+										</a>
+									</span>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+				</nav>
+				
+				
+				
+			</div>
+		</section>
+	</body>
+</html>

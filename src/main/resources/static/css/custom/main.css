@@ -1,0 +1,53 @@
+body {
+  padding-top: 10px;
+  font-family: Tahoma;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 10px;
+    
+  }
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.welcome{
+	background: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2); 
+    background: linear-gradient(to right, #185a9d, #43cea2);
+    color: #fff;
+    text-align: left;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #D1D0CE;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+	color: white;
+}
+
+a{
+	color:#D1D0CE;
+	text-decoration:none;
+	background-color:transparent;
+	-webkit-text-decoration-skip:objects
+}
+
+a:hover{
+	color:white;
+	text-decoration:underline
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+			
+		<div th:replace="fragment/header :: css"></div>
+		
+	</head>
+	<body>
+		<footer class="py-5 bg-dark">
+			<div class="container" th:fragment="footer" th:align="center">
+				<span class="m-0 text-center text-white">Myanmar Online Shopping</span>
+			</div>
+		</footer>
+
+
+		<div th:fragment="js">
+		
+			<script src="https://use.fontawesome.com/bd99e600ac.js"></script>
+			<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			
+		</div>
+			
+		
+	</body>
+</html>
