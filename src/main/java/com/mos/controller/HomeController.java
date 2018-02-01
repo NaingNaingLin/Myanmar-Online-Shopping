@@ -20,11 +20,10 @@ public class HomeController {
 		
 		return "/views/about";
 	}
-<<<<<<< HEAD
 	
 	public void test(){
 		
 	}
-=======
->>>>>>> parent of 453e048... Test push
+
+
 }
