@@ -20,4 +20,8 @@ public class HomeController {
 		
 		return "/views/about";
 	}
+	
+	public void test(){
+		
+	}
 }
